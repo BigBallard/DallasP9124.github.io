@@ -1,0 +1,17 @@
+
+#mainNav {
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%; 
+    position: absolute; 
+}
+#mainNav .navbar-brand {
+    font-weight: bold;
+    font-size: 25pt; 
+}
+#mainNav .navbar-collapse {
+    font-size: 20pt; 
+}
+#mainNav a.dropdown-item {
+    font-size: 16pt;
+}

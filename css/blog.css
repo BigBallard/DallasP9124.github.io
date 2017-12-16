@@ -13,8 +13,9 @@
     font-size: 20pt; 
 }
 #mainNav a.dropdown-item {
-    font-size: 16pt;
-}
+    font-size: 16pt;}
+    #main a.navbar-brand img{
+        padding-bottom: 10px;}
 
 header.masthead{
     background-color: crimson;
@@ -35,5 +36,8 @@ header.masthead{
         background-color: #212529;
         opacity: 0.5; }
     header.masthead .site-heading {
-        padding: 100px 0 150px;
+        padding-top: 100px;
         color: white; }
+    header.masthead h1 {
+        padding-bottom: 15px;
+    }

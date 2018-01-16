@@ -41,3 +41,7 @@ header.masthead{
     header.masthead h1 {
         padding-bottom: 15px;
     }
+
+#post p {
+    font-size: 15pt;
+}

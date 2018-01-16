@@ -1,18 +1,18 @@
-<!doctype html>
-<title>Site Maintenance</title>
-<style>
-  html{height: 100%;}
-  body {text-align: center; padding: 150px; background-image: -webkit-gradient(linear, left top, left bottom, from(#d4d2d1), to(#858280));
-  background-image: -webkit-linear-gradient(top, #d4d2d1, #858280);
-  background-image: -moz-linear-gradient(top, #d4d2d1, #858280);
-  background-image: linear-gradient(to bottom, #d4d2d1, #858280);}
-  h1 { font-size: 70px;margin-top: 0px;}
-  body { font: 30px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: center; width: 900px; margin: 0 auto; border-color: #b81a32; border-width: 4px; border-style: solid; border-radius: 10px; background-color: #f5f3f1}
-  a { color: #b81a32; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-  #logo {padding-top: 15px;}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dallas Phillips</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Dallas Phillips">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Custom styles for this template -->
+     <link href="css/blog.css" rel="stylesheet">
+</head>
 
 <body>
     <!-- Navigation -->
@@ -69,5 +69,21 @@
         <p>The next challenges involve the management, and essentially garbage collection, of the sample sets of data that are stored in the database. This is more of a learning challenge for me to figure out a method to correlate internal events in the api that I can use to identify when a sample set needs to be removed from the database as to not clutter disk space.</p>
         <p>Optimization is also a large concern in making this service scaleable. In our test environment, it is really hard to replication the degree of dataflow an enterprise such as AT&T or Netflix is capable of producing. Keeping that in mind, I will also have to gain further understanding of JPA (Java Persistence API) and SQL queries to better optimize the extraction of data from the database considering that millions of transactions could happen an hour. Later blog posts will document the challenges I face across the way and how I solve certain solutions.</p> 
     </div>
-</article>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery-3.2.1.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/blog.js"></script>
+
 </body>
+
+</html>

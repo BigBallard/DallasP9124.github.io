@@ -1,7 +1,4 @@
-$(function(){
-  $(".dropdown-item").click(function(){
-    var post = $(this).attr("post")
+function loadContent(post){
     var url = "../../posts/" + post + ".html"
     $("#current").load(url)
-  })
-})
+}

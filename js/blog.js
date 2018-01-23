@@ -9,5 +9,5 @@ function hideToggle(elementId){
 }
 
 $(function(){
-  $("#current").load("../posts/post1.html")
+  $("#current").load("../../posts/post1.html")
 })

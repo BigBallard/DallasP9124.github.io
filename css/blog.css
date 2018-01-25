@@ -42,6 +42,6 @@ header.masthead{
         padding-bottom: 15px;
     }
 
-#post p {
+.post p {
     font-size: 15pt;
 }

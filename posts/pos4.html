@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<div class="container post" >
+  <h3>Post 4: 2/11/2018</h3>
+  <p>Taking on the reifier refactor has definitely been a challenge this past week. What seemed as a simple replacement of the front end design and minor additions to the resulting backend has shown to be an iceberg of a task. I was able to implement the new layout and save resulting JSON paths that include the array indexing. There are few more kinks I need to fix such as the rendering of different components when a specific radio button is selected in a group. The new changes have to be backwards compatible in order to support the previous reifier configurations that were made and being used in current systems.</p>
+  <p>When these last few things are completed the next big task, which I have come to accept will indeed big, will be the componentization of the elements that I added to the interface. There are other views and dialogs that allow a user to identify the JSON path. So those new elements I added need to be extracted so that the same functionality can be distributed without copies of code being used everywhere. One of the challenges I anticipate is the rules for index selection is different for some dialogs compared to others.</p>
+  <p>Primarily there are two dialogs: one that allows you so identify any number of indexes to a JSON path that includes arrays, and the another that only allows one selection per index. The latter is for selecting paths to a value that will be used with either a ontology class IRI or itself (implying that the value of the path will result in an IRI identifier).</p>
+  <p>On Friday, the team gave a sprint demo to show the new features or fixes that were completed during the two week sprint. I was first to go and demonstrated the statistics service that I implemented the weeks prior and also explained the new garbage collection features that I added. I used a simple use case where in the context of the corporation, a sample of users trigger file transfer events and Darklight was monitoring for file transfers were n deviations from the mean of that users transfer sizes. With the freemarker feature, I was able to create separate bins for each user with a single expression that extracted the value of the users login id. It seemed that I covered the basis needed to make this a distributable service/feature. Now it will be undergoing significant integrated testing with our inhouse setup of Darklight.</p>
+  <p>The primary things I am looking for during this round of testing:
+    <ul>
+      <li>Sufficient size of bin capacity limits</li>
+      <li>Sufficient size of database max capacity</li>
+      <li>Determining optimal bin capacity limits for data of specific variability</li>
+      <li>Proper garbage collection iterations</li>
+      <li>Database query sufficiency as bins and database grow</li>
+    </ul>
+  </p>
+</div>

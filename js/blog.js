@@ -4,5 +4,5 @@ function loadContent(post){
 }
 
 $( document ).ready(function() {
-  $("#current").load("../../posts/post11.html")
+  $("#current").load("../../posts/post12.html")
 });
